@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root{
+
+  --primary-color: #fff;
+  --secondary-color: rgb(61, 68, 73);
+  --highlight-color: #3282b8;
+
+  --edit-color: ;
+  --delete-color: ;
+
+  --dt-padding: 12px;
+  --dt-padding-s: 6px;
+  --dt-padding-xs: 2px;
+
+  --dt-background_color: #2a3338;
+  --dt-border-color: var(--secondary-color);
+  --dt-bg-color: var(--highlight-color);
+  --dt-text-color: var(--primary-color);
+
+}
+
+*{
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+table{
+  margin: 50px auto 0 auto;
+  text-align: center;
+  background-color: var(--dt-background_color);
+  color: var(--dt-text-color);
+  border-collapse: collapse;
+  width: 95vw;
+}
+
+table th, table td{
+  padding: var(--dt-padding);
+}
+
+table th{
+  background-color: #1e272e;
+  font-weight: bolder;
+  /*border-bottom: 1px solid var(--dt-border-color);*/
+}
+
+table tbody tr:nth-child(even){
+  background-color: var(--dt-border-color);
+}
+
+table tbody tr{
+  transition: all 0.5s;
+}
+
+table tbody tr:hover{
+  background-color: var(--highlight-color);
+}
+
+table tbody td:last-child{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+table tbody form input[type = "submit"]{
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+table tbody form .button_delete{
+  background-color: #c0392b;
+}
+
+table tbody form .button_delete:hover{
+  background-color: #e74c3c;
+}
+
+table tbody form .button_update{
+  background-color: #27ae60;
+}
+
+table tbody form .button_update:hover{
+  background-color: #2ecc71;
+}

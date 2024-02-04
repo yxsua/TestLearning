@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="IMG/logo.png">
+  <link rel="stylesheet" href="CSS/index.css">
+  <link rel="stylesheet" href="CSS/popup.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <title> Test Learning </title>
+</head> 
+<body>
+
+  <section>
+
+    <header>
+
+      <a href="" class="logo"><img src="IMG/logo.png"></a>
+      <ul>
+        <li><a class="abrir-popup" id="registrar"> Regístrate </a></li>
+        <li><a class="abrir-popup" id="iniciarsesion"> Iniciar Sesión </a></li>
+      </ul>
+
+    </header>
+
+    <div class="content">
+
+      <div class="textbox">
+        <h1> Test Learning </h1>
+        <p> Nuestro objetivo es ayudar a los alumnos de CECyTEQ a realizar los tests de estilo de aprendizaje solicitados por el área de psicología de manera rápida y efectiva. </p>
+      </div>
+
+      <div class="slider">
+
+      </div>
+      
+    </div>
+
+  </section>
+
+  <!-- REGISTRO -->
+
+  <div class="overlay" id="overlay">
+
+    <div class="popup" id="popup">
+
+      <span href="" id="cerrar-popup" class="cerrar-popup"><i class="fas fa-times"></i></span>
+
+      <h3> Regístrate </h3>
+      <h4> Ingresa tus datos para el registro</h4>
+
+      <form id="formulario_registro">
+
+        <div class="inputs" id="inputs">
+
+          <input type="text" placeholder="Nombre completo" name="nombre" id="nombre" minlength="20" maxlength="40">
+          <p id="errornombre"> Debe tener un mínimo de 20 caracteres y un máximo de 40.</p> 
+          <input type="password" placeholder="Contraseña" name="contrasena" id="contrasena">
+          <p id="errorcontrasena">Debe tener de 8 a 16 caracteres, mínimo una letra mayúscula y un número.</p> 
+          <input type="number" placeholder="Número de control" name="noControl" id="noControl">
+          <p id="errornoControl"> El número de control debe ser de 14 digitos, entero y positivo.</p>
+          <select name="grupo" id="grupo">
+            <option value="0"> Grupo </option>
+            <option value="TPROG - AMBI"> PROGRAMACIÓN </option>
+            <option value="TMANTI - AMBI"> MANTENIMIENTO</option>
+            <option value="TMECA - AMBI"> MECATRÓNICA </option>
+          </select>
+
+          <select name="semestre" id="semestre">
+            <option value="0"> Semestre </option>
+            <option value="1"> 1</option>
+            <option value="2"> 2</option>
+            <option value="3"> 3</option>
+            <option value="4"> 4</option>
+            <option value="5"> 5</option>
+            <option value="6"> 6</option>
+          </select>
+    
+
+        </div>
+
+        <input type="submit" class="submit" value="Enviar" name="Enviarregistro">
+
+      </form>
+
+    </div>
+
+  </div>
+
+  <!-- INICIO DE SESIÓN -->
+
+  <div class="overlay" id="overlay2">
+
+      <div class="popup" id="popup2">
+  
+        <span href="" id="cerrar-popup2" class="cerrar-popup"><i class="fas fa-times"></i></span>
+  
+        <h3> Iniciar sesión </h3>
+        <h4> Ingresa tus datos para iniciar sesión </h4>
+  
+        <form id="formulario_sesion">
+  
+          <div class="inputs" id="inputs2">
+
+            <input type="number" placeholder="Número de control" name="noControlsesion" id="noControlsesion">
+            <input type="password" placeholder="Contraseña" name="contrasenasesion" id="contrasenasesion">
+  
+          </div>
+  
+          <input type="submit" class="submit" value="Enviar" name="Enviar">
+  
+        </form>
+  
+      </div>
+  
+  </div>
+
+
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="JS/validacionRegistro.js"></script>
+  <script src="JS/validacionSesion.js"></script>
+  <script src="JS/popup.js"></script>
+
+</body>
+
+</html>

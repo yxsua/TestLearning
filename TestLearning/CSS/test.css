@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+#form_testaprendizaje{
+  width: 100vw;
+  padding: 5%;
+}
+
+.container_question{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid rgba(0,0,0,0.3);
+  padding-bottom: 2em;
+}
+
+.container_question .question{
+  width: 100%;
+  margin-top: 2em;
+}
+
+.container_question .question h2{
+  font-size: 1.5rem;
+}
+
+.container_question p{
+  margin-top: 10px;
+}
+
+.container_question .select{
+  position: relative;
+  width: 320px;
+  margin: 10px 0 0 0;
+}
+.container_question .select select{
+  width: 100%;
+  padding: 10px;
+  font-size: .9rem;
+  border: none;
+  outline: 1px solid rgba(0,0,0,0.5);
+  color: rgba(0,0,0,0.8);
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 400;
+  transition: 0.09s all step-end;
+}
+
+.container_question .select select::-ms-expand{
+  display: none;
+}
+
+.container_question .select select:focus{
+  outline: 2px solid #3498db;
+  color: #3498db;
+}
+
+.container_question .select select:checked{
+  outline: #27ae60;
+}
+
+
+
+
+
